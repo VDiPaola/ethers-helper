@@ -1,24 +1,28 @@
 {
   "name": "ethers-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "simple ether.js helper for easy integration",
-   "main": "lib/index.js",
-   "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "keywords": ["ethers", "ethersjs","web3"],
+  "keywords": [
+    "ethers",
+    "ethersjs",
+    "web3"
+  ],
   "author": "VDiPaola",
   "license": "ISC",
   "devDependencies": {

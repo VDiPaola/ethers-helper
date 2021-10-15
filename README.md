@@ -13,7 +13,7 @@ yarn add ethers-helper
 
 import and create object
 ```
-import EthersHelper from '../index';
+import EthersHelper from 'ethers-helper';
 const ethersHelper = new EthersHelper();
 ```
 
